@@ -6,9 +6,21 @@
 
 
 ## All the folders Overview:
-    1. DSA (Data Structure and Algorithem)
-    2. Javascript
-    3. Math
+    -- DSA (Data Structure and Algorithem)
+        - Searching
+        - Sorting
+
+    -- Javascript
+        - ES6+ feature
+
+    -- React
+        - Conditional Rendering
+        - Props
+        - Rendering List
+
+    -- Math
         - Number Theory
-    4. RUST
+
+    -- RUST
         - Fundamentals
+        - Ownership and Borrowing
