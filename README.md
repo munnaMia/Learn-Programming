@@ -17,7 +17,9 @@
 
 ### **Project Links :**
 
-1. __Empty Now__
+1. [Tic Tac Toe](https://github.com/munnaMia/Tic-tac-toe-)
+2. [Apple Clone Tailwind project](https://github.com/munnaMia/apple-clone-project)
+3. [Weather API project](https://github.com/munnaMia/Weather-Project)
 
 <br>
 <hr>
@@ -26,13 +28,9 @@
     1. RUST Programming Language.
     2. React Topics.
     3. DSA.
-    4. 30 Day's Leetcode JS problems.
+    4. Practics Projecs
     5. Maths topic.
     6. Javascript Programming Language.
-
-
-
-
 
 <br>
 <br>
