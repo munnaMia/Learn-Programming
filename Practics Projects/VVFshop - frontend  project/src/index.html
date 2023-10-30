@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Skranji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>VVFshop</title>
+</head>
+<body class="max-w-7xl bg-white mx-auto my-0">
+    <!-- header section start here  -->
+    <header class="pt-3 h-[63px] relative shadow-lg shadow-indigo-500/40">
+        <nav class="flex flex-row justify-between w-full items-center p-2">
+            <!-- left nav side  -->
+            <div class="flex flex-row items-center">
+                <span class="mr-5 text-3xl font-bold font-logo_font"><a href="#">VVFshop</a></span>
+                <ul class="flex flex-row gap-3">
+                    <li class="uppercase text-lg ml-3 duration-150 border-y-2 border-white font-medium transition-all ease-in-out hover:text-orange-400 hover:border-y-2 hover:border-orange-300"><a href="index.html">home</a></li>
+                    <li class="uppercase text-lg ml-3 duration-150 border-y-2 border-white font-medium transition-all ease-in-out hover:text-orange-400 hover:border-y-2 hover:border-orange-300"><a href="shop.html">shop</a></li>
+                    <li class="uppercase text-lg ml-3 duration-150 border-y-2 border-white font-medium transition-all ease-in-out hover:text-orange-400 hover:border-y-2 hover:border-orange-300"><a href="blog.html">blog</a></li>
+                    <li class="uppercase text-lg ml-3 duration-150 border-y-2 border-white font-medium transition-all ease-in-out hover:text-orange-400 hover:border-y-2 hover:border-orange-300"><a href="about.html">about</a></li>
+                    <li class="uppercase text-lg ml-3 duration-150 border-y-2 border-white font-medium transition-all ease-in-out hover:text-orange-400 hover:border-y-2 hover:border-orange-300"><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+
+            <!-- right nav side  -->
+            <div>
+                <ul class="flex flex-row gap-3 items-center"> 
+                    <li class="text-2xl ml-2 text-gray-700 duration-200 hover:text-orange-400"><a href="shop.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="text-2xl ml-2 text-gray-700 duration-200 hover:text-orange-400"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li class="text-2xl ml-2 text-gray-700 duration-200 hover:text-orange-400"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li id="userIcon" class="text-2xl ml-2 text-gray-700 duration-200 hover:text-orange-400"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- User personal menu section  -->
+        <div id="userSetting" class=" invisible absolute right-2 top-16 flex flex-col bg-white shadow-lg shadow-indigo-500/40 w-[200px] rounded-xl">
+            <div class="flex p-2 border-b-2 border-black">
+                <i class="fa-solid fa-user text-xl ml-2 text-gray-700"></i>
+                <h2 class="text-xl ml-2 text-gray-700 ">Md Munna Mia</h2>
+            </div>
+    
+            <!-- lower setting section  -->
+            <div class="w-full">
+    
+                <!-- Language select  -->
+                <div>
+                    <i class="fa-solid fa-language text-2xl ml-2 text-gray-700 "></i>
+                    <select name="Language" id="lang" class="bg-transparent font-sans text-gray-700 outline-none ml-5">
+                        <option value="English">English</option>
+                        <option value="Bangla">Bangla</option>
+                        <option value="Hindi">Hindi</option>
+                    </select>
+                </div>
+    
+                <!-- money select  -->
+                <div>
+                    <i class="fa-solid fa-money-bill text-2xl ml-2 text-gray-700 "></i>
+                    <select name="Language" id="lang" class="bg-transparent font-sans text-gray-700 outline-none ml-5">
+                        <option value="English">USD</option>
+                        <option value="Bangla">TAKA</option>
+                        <option value="Hindi">RUPAY</option>
+                    </select>
+                </div>
+    
+               <!-- sign out and in -->
+               <div class="flex justify-center flex-col w-full mt-4 border-t-2 border-black">
+                <div class="flex mt-2">
+                    <i class="fa-solid fa-arrow-right-from-bracket text-xl ml-2 text-gray-700"></i>
+                    <span class="text-xl ml-2 text-gray-700"><a href="signup.html">Sign Out</a></span>
+                </div>
+                <div class="flex mt-2 mb-3">
+                    <i class="fa-solid fa-arrow-right-to-bracket text-xl ml-2 text-gray-700"></i>
+                    <span class="text-xl ml-2 text-gray-700"><a href="signup.html">Sign In</a></span>
+                </div>
+            </div>
+    
+            </div>
+        </div>
+    </header>
+    <!-- header section ends here  -->
+
+    <!-- hero section start here  -->
+    <section class="h-[calc(100vh-63px)] bg-no-repeat bg-center  w-full flex items-start justify-center flex-col pl-20 bg-[url('../images/hero.png')]" >
+        <h2 class="text-9xl text-red-500 font-bold font-logo_font">VVFshop</h2>
+        <p class="uppercase font-sans text-2xl font-thin text-gray-700">come and get</p>
+        <p class="uppercase font-sans text-3xl font-semibold text-gray-800">brand new deals and offers</p>
+        <button class="text-2xl font-sans font-semibold text-white bg-slate-500 active:bg-slate-600 rounded-lg h-11 w-36 mt-8">Buy Now</button>
+    </section>
+    <!-- hero section ends here  -->
+
+    <!-- speacial companis section start here -->
+    <section class="flex gap-4 justify-between items-center w-full mt-2">
+        <img class="opacity-40 cursor-pointer duration-150 hover:opacity-75" src="../images/Brands/zara.png" alt="brand">
+        <img class="opacity-40 cursor-pointer duration-150 hover:opacity-75" src="../images/Brands/asus.png" alt="brand">
+        <img class="opacity-40 cursor-pointer duration-150 hover:opacity-75" src="../images/Brands/dng.png" alt="brand">
+        <img class="opacity-40 cursor-pointer duration-150 hover:opacity-75" src="../images/Brands/hurley.png" alt="brand">
+        <img class="opacity-40 cursor-pointer duration-150 hover:opacity-75" src="../images/Brands/oppo.png" alt="brand">
+        <img class="opacity-40 cursor-pointer duration-150 hover:opacity-75" src="../images/Brands/samsung.png" alt="brand">
+    </section>
+    <!-- speacial compa section ends here -->
+
+
+    <!-- tranding products section start here   -->
+    <section class="w-full flex flex-col mt-4 h-[100%]">
+        <h2 class="font-sans text-red-600 text-3xl mt-6 uppercase ml-7 mb-6 font-bold "><i class="fa-solid fa-arrow-trend-up"></i> Tranding Offers</h2>
+        <hr class="h-1">
+
+        <div class="grid grid-flow-col grid-col-3 w-full gap-3">
+
+        <!-- speacial deals section 01 -->
+            <div class="w-full flex flex-col cursor-pointer rounded-lg items-center hover:shadow-lg">
+                <h3 class="w-full text-center mt-3 text-3xl text-blue-600 font-bold uppercase">offers ends at</h3>
+                <div class="flex gap-2 w-full justify-center items-center mt-2 mb-2">
+                    <span class="p-1 text-center text-2xl bg-blue-200 rounded-lg font-normal text-black">01</span>:
+                    <span class="p-1 text-center text-2xl bg-blue-200 rounded-lg font-normal text-black">13</span>:
+                    <span class="p-1 text-center text-2xl bg-blue-200 rounded-lg font-normal text-black">30</span>
+                </div>
+                <div class="overflow-hidden object-contain h-96 ">
+                    <img class="w-full h-full duration-150 rounded-lg hover:scale-105" src="../images/top_deals/Top_deals1.jpg" alt="deals1">
+                </div>
+                <div class="flex flex-row gap-1 text-orange-400 w-full justify-center items-center mt-2 mb-2">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <h3 class="text-black font-semibold font-sans text-2xl">Boggy Men</h3>
+                <span class="text-2xl text-orange-400 font-sans font-light mt-2 mb-2">233.34$</span>
+                <div class="w-full text-xl text-black opacity-60 font-light text-center">
+                    <span>Stock : 122P</span>
+                </div>
+            </div>
+
+            <!-- Tranding section 2 desing  -->
+            <div class="w-full flex flex-col items-center gap-6">
+                <h3 class="w-full text-center mt-3 text-3xl text-yellow-400 font-bold uppercase">Buy One Get One</h3>
+
+                <div class="flex gap-4 cursor-pointer duration-150 hover:shadow-lg pr-2">
+                    <img class="h-28 rounded-md" src="../images/top_deals/offers1.jpg" alt="">
+                    <div class="w-full flex flex-col">
+                        <h2 class="text-2xl text-left w-full">Flower rose</h2>
+                        <div class="flex flex-row gap-1 text-orange-400 w-full justify-center items-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(2.5M)</p>
+                        </div>
+                        <span class="text-xl text-orange-400 font-sans font-light">45 $</span>
+                        <span class="w-full text-sm font-light opacity-60">Free Shiping</span>
+                    </div>
+                </div>
+
+                <div class="flex cursor-pointer gap-4 duration-150 hover:shadow-lg pr-2">
+                    <img class="h-28 rounded-md" src="../images/top_deals/offers8.jpg" alt="">
+                    <div class="w-full flex flex-col">
+                        <h2 class="text-2xl text-left w-full">M4DJ Monitor</h2>
+                        <div class="flex flex-row gap-1 text-orange-400 w-full justify-center items-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p>(2.5M)</p>
+                        </div>
+                        <span class="text-xl text-orange-400 font-sans font-light">138 $</span>
+                        <span class="w-full text-sm font-light opacity-60">Free Shiping</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 cursor-pointer duration-150 hover:shadow-lg pr-2">
+                    <img class="h-28 rounded-md" src="../images/top_deals/offers2.jpg" alt="">
+                    <div class="w-full flex flex-col">
+                        <h2 class="text-2xl text-left w-full">Rose dress</h2>
+                        <div class="flex flex-row gap-1 text-orange-400 w-full justify-center items-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p>(2.5M)</p>
+                        </div>
+                        <span class="text-xl text-orange-400 font-sans font-light">28 $</span>
+                        <span class="w-full text-sm font-light opacity-60">Free Shiping</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 cursor-pointer duration-150 hover:shadow-lg pr-2">
+                    <img class="h-28 rounded-md" src="../images/top_deals/offers7.jpg" alt="">
+                    <div class="w-full flex flex-col">
+                        <h2 class="text-2xl text-left w-full">M2 USB-c</h2>
+                        <div class="flex flex-row gap-1 text-orange-400 w-full justify-center items-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p>(2.5M)</p>
+                        </div>
+                        <span class="text-xl text-orange-400 font-sans font-light">8 $</span>
+                        <span class="w-full text-sm font-light opacity-60">Free Shiping</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tranding section 3 desing  -->
+            <div class="w-full flex flex-col items-center gap-6">
+                <h3 class="w-full text-center mt-3 text-3xl text-black font-bold uppercase">Premiun Prices.</h3>
+
+                <div class="flex gap-4 cursor-pointer duration-150 hover:shadow-lg pr-2">
+                    <img class="h-28 rounded-md" src="../images/top_deals/offers3.jpg" alt="">
+                    <div class="w-full flex flex-col">
+                        <h2 class="text-2xl text-left w-full">Guccy Purse</h2>
+                        <div class="flex flex-row gap-1 text-orange-400 w-full justify-center items-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p>(2.5M)</p>
+                        </div>
+                        <span class="text-xl text-orange-400 font-sans font-light">738 $</span>
+                        <span class="w-full text-sm font-light opacity-60">Free Shiping</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 cursor-pointer duration-150 hover:shadow-lg pr-2">
+                    <img class="h-28 rounded-md" src="../images/top_deals/offers6.jpg" alt="">
+                    <div class="w-full flex flex-col">
+                        <h2 class="text-2xl text-left w-full">G7 Headset</h2>
+                        <div class="flex flex-row gap-1 text-orange-400 w-full justify-center items-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p>(2.5M)</p>
+                        </div>
+                        <span class="text-xl text-orange-400 font-sans font-light">108 $</span>
+                        <span class="w-full text-sm font-light opacity-60">Free Shiping</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 cursor-pointer duration-150 hover:shadow-lg pr-2">
+                    <img class="h-28 rounded-md" src="../images/top_deals/offers4.jpg" alt="">
+                    <div class="w-full flex flex-col">
+                        <h2 class="text-2xl text-left w-full">HP G79</h2>
+                        <div class="flex flex-row gap-1 text-orange-400 w-full justify-center items-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(2.5M)</p>
+                        </div>
+                        <span class="text-xl text-orange-400 font-sans font-light">200 $</span>
+                        <span class="w-full text-sm font-light opacity-60">Free Shiping</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 cursor-pointer duration-150 hover:shadow-lg pr-2">
+                    <img class="h-28 rounded-md" src="../images/top_deals/offers5.jpg" alt="">
+                    <div class="w-full flex flex-col">
+                        <h2 class="text-2xl text-left w-full">Iphone 16 pro</h2>
+                        <div class="flex flex-row gap-1 text-orange-400 w-full justify-center items-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>(2.5M)</p>
+                        </div>
+                        <span class="text-xl text-orange-400 font-sans font-light">1550 $</span>
+                        <span class="w-full text-sm font-light opacity-60">Free Shiping</span>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- tranding products section ends here  -->
+
+    <!-- feature products section start here  -->
+    <section class="mt-7">
+        <h2 class="font-sans text-gray-600 text-3xl uppercase ml-7 mb-6 mt-11 font-bold "><i class="fa-solid fa-bag-shopping"></i> Feature Products</h2>
+        <hr class="h-1">
+
+        <div class="grid grid-rows-3 grid-flow-col gap-y-20 gap-x-4 mt-4">
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full " src="../images/Feature_images/feature1.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">Short Jeans</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">230 $  <del class="text-sm text-black">319 $</del></span>
+            </div>
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full" src="../images/Feature_images/featureU4.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">Iphone 12pro</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">420 $  <del class="text-sm text-black">619 $</del></span>
+            </div>
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full" src="../images/top_deals/offers3.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">Guccy Bag ra4</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">210 $  <del class="text-sm text-black">419 $</del></span>
+            </div>
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full" src="../images/Feature_images/feature4.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">D lamp</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">220 $  <del class="text-sm text-black">419 $</del></span>
+            </div>
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full" src="../images/Feature_images/feature5.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">Drop Table</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">320 $  <del class="text-sm text-black">519 $</del></span>
+            </div>
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full" src="../images/Feature_images/feature6.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">Sit Couch</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">620 $  <del class="text-sm text-black">519 $</del></span>
+            </div>
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full " src="../images/Feature_images/feature7.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">M5 Bed Shits</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">520 $  <del class="text-sm text-black">719 $</del></span>
+            </div>
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full " src="../images/Feature_images/feature8.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">Black King</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">220 $  <del class="text-sm text-black">319 $</del></span>
+            </div>
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full" src="../images/Feature_images/featureU1.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">NICI sd45</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">320 $  <del class="text-sm text-black">519 $</del></span>
+            </div>
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full" src="../images/Feature_images/featureU2.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">NICI fd453</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">620 $  <del class="text-sm text-black">519 $</del></span>
+            </div>
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full " src="../images/Feature_images/featureU3.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">ADIBAS 345hr</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">520 $  <del class="text-sm text-black">719 $</del></span>
+            </div>
+
+            <div class="cursor-pointer p-2 rounded-lg w-64 duration-150 hover:shadow-lg">
+                <div class="overflow-hidden">
+                    <img class="object-contain rounded-lg  w-full " src="../images/Feature_images/featureU4.jpg" alt="image feature">
+                </div>
+                <h2 class="text-black text-2xl w-full text-left font-medium font-sans">Iphone 16pro</h2>
+                <div class="flex text-orange-400 font-sans text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>(2.5M)</p>
+                </div>
+                <span class="text-orange-400 font-sans font-medium text-2xl">999 $  <del class="text-sm text-black">1500 $</del></span>
+            </div>
+
+        </div>
+        
+    </section>
+    <!-- feature products section ends here  -->
+
+
+      <!-- ad section -->
+      <section class="overflow-hidden mt-6 mb-2 w-full bg-[url('../images/banner2.jpg')] cursor-pointer p-9 rounded-2xl">
+        <h2  class="text-white font-bold font-sans text-5xl text-center uppercase my-10"><span class="text-orange-400">50% Discount </span>On First Buy.</h2>
+    </section>
+
+
+    <!-- footer section start here  -->
+    <footer class="w-full bg-white mt-11">
+        <!-- section one  -->
+        <div class="flex flex-row gap-3 justify-center items-center w-full bg-slate-900 p-12">
+            <div class="block mr-10">
+                <h2 class="text-left font-sans font-bold text-3xl text-orange-400 uppercase">join out newsletter</h2>
+                <p class="text-white uppercase font-light text-xl text-left font-sans opacity-60">get e-mail update about latest offers and deals</p>
+            </div>
+            <div class="flex justify-center items-center">
+                <input type="email" placeholder="E-mail" class="bg-white font-semibold text-left pl-2 text-orange-400 h-10 outline-none border-none ">
+                <button class="h-10 uppercase text-white py-2 bg-orange-400 p-1 font-bold duration-150 hover:bg-white hover:text-orange-400">sign up</button>
+            </div>
+        </div>
+
+        <!-- section two  -->
+        <div class="w-full flex justify-center items-center flex-col gap-4">
+            <h2 class="mt-7 text-orange-400 text-4xl font-bold font-logo_font">VVFshop</h2>
+            <div class="flex flex-row gap-4">
+                <i class="fa-brands fa-facebook text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-blue-500"></i>
+                <i class="fa-brands fa-twitter text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-blue-500"></i>
+                <i class="fa-solid fa-envelope text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-red-500"></i>
+                <i class="fa-brands fa-linkedin text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-blue-500"></i>
+                <i class="fa-solid fa-location-dot text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-blue-500"></i>
+                <i class="fa-solid fa-phone text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-green-500"></i>
+            </div>
+            <h3 class="opacity-60 font-medium font-sans mb-3">CopyRight @ 2023- all the rights reserved by nCombinate. Develop by <em> MD. Munna Mia </em></h3>
+        </div>
+    </footer>
+    <!-- footer section ends here  -->
+
+    <script src="script.js"></script>
+</body>
+</html>

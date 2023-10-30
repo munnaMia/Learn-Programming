@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Skranji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>VVFshop</title>
+</head>
+<body class="max-w-7xl bg-white mx-auto my-0">
+    <!-- header section start here  -->
+    <header class="pt-3 h-[63px] relative shadow-lg shadow-indigo-500/40">
+        <nav class="flex flex-row justify-between w-full items-center p-2">
+            <!-- left nav side  -->
+            <div class="flex flex-row items-center">
+                <span class="mr-5 text-3xl font-bold font-logo_font"><a href="#">VVFshop</a></span>
+                <ul class="flex flex-row gap-3">
+                    <li class="uppercase text-lg ml-3 duration-150 border-y-2 border-white font-medium transition-all ease-in-out hover:text-orange-400 hover:border-y-2 hover:border-orange-300"><a href="index.html">home</a></li>
+                    <li class="uppercase text-lg ml-3 duration-150 border-y-2 border-white font-medium transition-all ease-in-out hover:text-orange-400 hover:border-y-2 hover:border-orange-300"><a href="shop.html">shop</a></li>
+                    <li class="uppercase text-lg ml-3 duration-150 border-y-2 border-white font-medium transition-all ease-in-out hover:text-orange-400 hover:border-y-2 hover:border-orange-300"><a href="blog.html">blog</a></li>
+                    <li class="uppercase text-lg ml-3 duration-150 border-y-2 border-white font-medium transition-all ease-in-out hover:text-orange-400 hover:border-y-2 hover:border-orange-300"><a href="about.html">about</a></li>
+                    <li class="uppercase text-lg ml-3 duration-150 border-y-2 border-white font-medium transition-all ease-in-out hover:text-orange-400 hover:border-y-2 hover:border-orange-300"><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+
+            <!-- right nav side  -->
+            <div>
+                <ul class="flex flex-row gap-3 items-center"> 
+                    <li class="text-2xl ml-2 text-gray-700 duration-200 hover:text-orange-400"><a href="shop.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="text-2xl ml-2 text-gray-700 duration-200 hover:text-orange-400"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li class="text-2xl ml-2 text-gray-700 duration-200 hover:text-orange-400"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li id="userIcon" class="text-2xl ml-2 text-gray-700 duration-200 hover:text-orange-400"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- User personal menu section  -->
+        <div id="userSetting" class=" invisible absolute right-2 top-16 flex flex-col bg-white shadow-lg shadow-indigo-500/40 w-[200px] rounded-xl">
+            <div class="flex p-2 border-b-2 border-black">
+                <i class="fa-solid fa-user text-xl ml-2 text-gray-700"></i>
+                <h2 class="text-xl ml-2 text-gray-700 ">Md Munna Mia</h2>
+            </div>
+    
+            <!-- lower setting section  -->
+            <div class="w-full">
+    
+                <!-- Language select  -->
+                <div>
+                    <i class="fa-solid fa-language text-2xl ml-2 text-gray-700 "></i>
+                    <select name="Language" id="lang" class="bg-transparent font-sans text-gray-700 outline-none ml-5">
+                        <option value="English">English</option>
+                        <option value="Bangla">Bangla</option>
+                        <option value="Hindi">Hindi</option>
+                    </select>
+                </div>
+    
+                <!-- money select  -->
+                <div>
+                    <i class="fa-solid fa-money-bill text-2xl ml-2 text-gray-700 "></i>
+                    <select name="Language" id="lang" class="bg-transparent font-sans text-gray-700 outline-none ml-5">
+                        <option value="English">USD</option>
+                        <option value="Bangla">TAKA</option>
+                        <option value="Hindi">RUPAY</option>
+                    </select>
+                </div>
+    
+                <!-- sign out and in -->
+                <div class="flex justify-center flex-col w-full mt-4 border-t-2 border-black">
+                    <div class="flex mt-2 bg-white w-full">
+                        <i class="fa-solid fa-arrow-right-from-bracket text-xl ml-2 text-gray-700"></i>
+                        <span class="text-xl ml-2 text-gray-700 bg-white w-full"><a href="signup.html">Sign Out</a></span>
+                    </div>
+                    <div class="flex mt-2 mb-3 bg-white w-full">
+                        <i class="fa-solid fa-arrow-right-to-bracket text-xl ml-2 text-gray-700"></i>
+                        <span class="text-xl ml-2 text-gray-700 bg-white w-full"><a href="signup.html">Sign In</a></span>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </header>
+    <!-- header section ends here  -->
+
+    <!-- section one  -->
+    <section>
+        <h2 class="mt-24 text-orange-400 text-5xl font-bold font-logo_font text-center">Contact VVFshop</h2>
+        <div class="p-3 shadow-lg mt-8">
+            <p class="text-black  font-sans font-normal text-xl p-5 leading-9 tracking-widest text-justify opacity-50">
+                At VVFshop, we value your feedback, questions, and inquiries. Whether you want to get in touch with us for assistance, share your thoughts on your shopping experience, or have any other reason to reach out, we're here to listen and assist you.</p>
+        </div>
+    </section>
+
+    <!-- section two  -->
+    <section class="flex flex-row mt-11">
+        <div class="flex-1 flex justify-center items-center p-4 flex-col gap-3">
+            <textarea placeholder="Your massage here" class="w-full h-72 p-3 border-0 outline-none text-xl font-sans font-light shadow-lg" name="" id="" cols="30" rows="10"></textarea>
+            <div>
+                <button class="p-2 m-3 active:bg-blue-700 bg-blue-600 text-white shadow-lg hover:shadow-none duration-150 ease-in-out rounded-lg text-2xl">Submit</button>
+            </div>
+        </div>
+        <div class="flex-1 p-3">
+            <h2 class="opacity-60 w-full text-center text-3xl font-sans font-semibold text-gray-800 mb-5">Address & Office Time</h2>
+            <hr class="mt-4">
+            <address class="font-sans text-xl font-thin text-black ml-6 mt-4">
+                <i class="fa-solid fa-building-flag mr-2"></i>VVFshop Headquarters <br>
+                <i class="fa-solid fa-location-dot mr-2"></i>  Highway Cumilla-Dhaka<br>
+                <i class="fa-solid fa-location-dot mr-2"></i>  Cumilla, Highway, 3500
+            </address>
+            <hr class="mt-4">
+            <h3 class="font-sans text-xl font-thin text-black ml-6 mt-4">
+                <i class="fa-regular fa-clock mr-2"></i> Monday-Friday: 9:00 AM - 6:00 PM <br>
+                <i class="fa-regular fa-clock mr-2"></i> Saturday: 10:00 AM - 4:00 PM <br>
+                <i class="fa-solid fa-clock mr-2"></i> Sunday: Closed
+            </h3>
+            <hr class="mt-4">
+        </div>
+    </section>
+
+
+    <!-- ad section -->
+    <section class="overflow-hidden mt-6 mb-2 w-full bg-[url('../images/banner2.jpg')] cursor-pointer p-9 rounded-2xl">
+        <h2  class="text-white font-bold font-sans text-5xl text-center uppercase my-10"><span class="text-orange-400">50% Discount </span>On First Buy.</h2>
+    </section>
+
+
+    <!-- footer section start here  -->
+    <footer class="w-full bg-white mt-11">
+        <!-- section one  -->
+        <div class="flex flex-row gap-3 justify-center items-center w-full bg-slate-900 p-12">
+            <div class="block mr-10">
+                <h2 class="text-left font-sans font-bold text-3xl text-orange-400 uppercase">join out newsletter</h2>
+                <p class="text-white uppercase font-light text-xl text-left font-sans opacity-60">get e-mail update about latest offers and deals</p>
+            </div>
+            <div class="flex justify-center items-center">
+                <input type="email" placeholder="E-mail" class="bg-white font-semibold text-left pl-2 text-orange-400 h-10 outline-none border-none ">
+                <button class="h-10 uppercase text-white py-2 bg-orange-400 p-1 font-bold duration-150 hover:bg-white hover:text-orange-400">sign up</button>
+            </div>
+        </div>
+
+        <!-- section two  -->
+        <div class="w-full flex justify-center items-center flex-col gap-4">
+            <h2 class="mt-7 text-orange-400 text-4xl font-bold font-logo_font">VVFshop</h2>
+            <div class="flex flex-row gap-4">
+                <i class="fa-brands fa-facebook text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-blue-500"></i>
+                <i class="fa-brands fa-twitter text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-blue-500"></i>
+                <i class="fa-solid fa-envelope text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-red-500"></i>
+                <i class="fa-brands fa-linkedin text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-blue-500"></i>
+                <i class="fa-solid fa-location-dot text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-blue-500"></i>
+                <i class="fa-solid fa-phone text-3xl text-black text-center cursor-pointer rounded-full p-3 hover:shadow-lg duration-150 hover:text-green-500"></i>
+            </div>
+            <h3 class="opacity-60 font-medium font-sans mb-3">CopyRight @ 2023- all the rights reserved by nCombinate. Develop by <em> MD. Munna Mia </em></h3>
+        </div>
+    </footer>
+    <!-- footer section ends here  -->
+
+    <script src="script.js"></script>
+</body>
+</html>
