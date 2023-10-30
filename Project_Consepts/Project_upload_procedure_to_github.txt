@@ -1,0 +1,11 @@
+Project upload procedure:
+/////////////////////////
+
+    1. Named the project.
+    2. Add the description.
+    3. Add the used technology's names.
+    4. Write the features list.
+    5. Tell users how to use it.
+    6. Commit properly.
+    
+    
