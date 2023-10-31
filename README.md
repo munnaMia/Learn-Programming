@@ -25,12 +25,11 @@
 <hr>
 
 ## All the TOPIC of this repo:
-    1. RUST Programming Language.
-    2. React Topics.
-    3. DSA.
-    4. Practics Projecs
-    5. Maths topic.
-    6. Javascript Programming Language.
+    >> React Topics.
+    >> DSA.
+    >> Practics Projecs
+    >> Maths topic.
+    >> Javascript Programming Language.
 
 <br>
 <br>
