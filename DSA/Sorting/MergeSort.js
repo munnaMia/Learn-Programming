@@ -15,4 +15,59 @@
 // The key insight of merge sort is that it's efficient because it divides the problem into smaller, more manageable sub-problems and then combines their solutions to produce a sorted array. The time complexity of merge sort is O(n log n) in the worst, best, and average cases, and it's a stable sorting algorithm, meaning it preserves the relative order of equal elements in the sorted array.
 
 // Merge sort does, however, require additional space to hold the temporary sub-arrays during the merging process. This space complexity is O(n), which can be a disadvantage when working with limited memory. There are in-place variations of merge sort, such as the Bottom-up merge sort, that reduce this space complexity, but they may be more complex to implement.
-
+function mergeSort() {
+    const array = [3, 5, 2, 34, 2, 1, 4, 56];
+    const arrayLength = array.length;
+    divide(array, 0, arrayLength - 1);
+  }
+  
+  function divide(array, startIndex, endIndex) {
+    if (startIndex === endIndex) return;
+  
+    let midIndex = startIndex + Math.floor((endIndex - startIndex) / 2); // Calculate the mid index of the array.
+  
+    divide(array, startIndex, midIndex);
+    divide(array, midIndex + 1, endIndex);
+  
+    conquer(array, startIndex, midIndex, endIndex);
+  }
+  
+  function conquer(array, startIndex, midIndex, endIndex) {
+    const mergeArray = [];
+  
+    let indx1 = startIndex; // Track array one
+    let indx2 = midIndex + 1; // Track array two
+    let index = 0; // Track the merged array
+  
+    while (indx1 <= midIndex && indx2 <= endIndex) {
+      if (array[indx1] <= array[indx2]) {
+        mergeArray[index] = array[indx1];
+        index++;
+        indx1++;
+      } else {
+        mergeArray[index] = array[indx2];
+        index++;
+        indx2++;
+      }
+    }
+  
+    while (indx1 <= midIndex) {
+      mergeArray[index] = array[indx1];
+      index++;
+      indx1++;
+    }
+  
+    while (indx2 <= endIndex) {
+      mergeArray[index] = array[indx2];
+      index++;
+      indx2++;
+    }
+  
+    // Copy the merged values back to the original array
+    for (let i = 0, j = startIndex; i < mergeArray.length; i++, j++) {
+      array[j] = mergeArray[i];
+    }
+  }
+  
+  mergeSort();
+  
