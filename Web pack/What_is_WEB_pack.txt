@@ -1,0 +1,4 @@
+Web pack is development tool.
+Its helps us to bundel our codes.
+Its mostly competeble to javascript. now we can work with html css scss and many more
+Its make multiple file loader plugins in a packed.
