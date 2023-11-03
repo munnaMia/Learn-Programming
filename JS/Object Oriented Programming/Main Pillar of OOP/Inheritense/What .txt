@@ -1,0 +1,15 @@
+Inheritance is a fundamental concept in object-oriented programming (OOP) that allows you to create a new class based on an existing class. The new class, known as a subclass or derived class, inherits the attributes (properties or fields) and methods (functions or procedures) of the existing class, which is called a superclass or base class. Inheritance is a way to promote code reuse and establish a hierarchical relationship between classes.
+
+Key points about inheritance:
+
+Superclass (Base Class): The superclass is the class that is being inherited from. It defines a set of attributes and methods that can be shared by one or more subclasses.
+
+Subclass (Derived Class): The subclass is the class that inherits from the superclass. It can reuse and extend the attributes and methods of the superclass, as well as add new attributes and methods specific to itself.
+
+"is-a" Relationship: Inheritance is often used to model an "is-a" relationship. For example, if you have a superclass Animal and a subclass Dog, you can say that a Dog "is-an" `Animal."
+
+Method Overriding: Subclasses can provide their own implementation of methods that are already defined in the superclass. This is called method overriding and allows the subclass to customize the behavior of inherited methods.
+
+Access to Superclass Members: Subclasses can access the public and protected members of the superclass. Private members of the superclass are not directly accessible from the subclass.
+
+Inheritance Hierarchy: You can create a chain of classes with multiple levels of inheritance. A subclass can become a superclass for another subclass, forming an inheritance hierarchy.
