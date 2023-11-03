@@ -1,0 +1,2 @@
+Encapsulation is - the action of enclosing something in or as if in a capsule. 
+Its mean each object in code should maintain its own state and the current snapshot of his object.

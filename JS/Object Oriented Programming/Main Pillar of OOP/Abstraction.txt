@@ -1,0 +1,1 @@
+Abstraction means hidding the implementation details inside and providing the necessary API.
