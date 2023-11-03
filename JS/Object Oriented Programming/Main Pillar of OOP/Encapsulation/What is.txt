@@ -1,0 +1,20 @@
+Encapsulation is one of the four fundamental concepts of object-oriented programming (OOP), the others being inheritance, polymorphism, and abstraction. It is a key principle in OOP that involves bundling the data (attributes or properties) and the methods (functions or procedures) that operate on that data into a single unit, called a class. Encapsulation enforces the idea of data hiding, which means that the internal details of how an object works are hidden from the outside and are not directly accessible.
+
+Here are the key aspects of encapsulation:
+
+Attributes/Properties/Fields: These are the data members of a class, representing the characteristics or data associated with objects. In encapsulation, these attributes are often declared as private or protected, meaning they cannot be accessed or modified directly from outside the class.
+
+Methods/Functions/Procedures: These are the behaviors or actions that objects can perform. The methods are defined within the class, and they can access and operate on the class's attributes. They provide an interface through which external code can interact with and manipulate the object's data.
+
+Access Control: Access modifiers such as "public," "private," and "protected" are used to control the visibility and accessibility of attributes and methods. In encapsulation, attributes are typically marked as private or protected to prevent direct access from outside the class, while methods can be marked as public to provide controlled access.
+
+Getter and Setter Methods: To allow controlled access to private attributes, getter methods (also known as accessor methods) and setter methods (also known as mutator methods) are often used. Getter methods retrieve the values of private attributes, and setter methods allow controlled modification of those attributes.
+
+The primary benefits of encapsulation are:
+
+Data Protection: It ensures that data is not directly manipulated from outside the class, reducing the risk of unintended changes and maintaining data integrity.
+
+Flexibility and Maintenance: By hiding the internal details of how a class works, encapsulation allows for easier maintenance and updates to the class's implementation without affecting the code that uses the class.
+
+Abstraction: It promotes the concept of interacting with objects at a higher level by providing well-defined interfaces (public methods) while hiding the implementation details. This contributes to the concept of abstraction.
+
