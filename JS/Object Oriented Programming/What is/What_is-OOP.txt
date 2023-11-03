@@ -1,0 +1,60 @@
+OOP(Object Oriented Programming) - OOP stands for Object-Oriented Programming, which is a programming paradigm or methodology used in software development. It is based on the concept of "objects," which are instances of classes that encapsulate data and behavior related to that data. OOP is designed to organize and structure code in a way that models real-world entities, making it easier to design, develop, and maintain complex software systems.
+
+
+Class is a template - In a class we have some sort of data or propertise with function or methods to do operation.
+=====================
+In object-oriented programming (OOP), a class is a blueprint or template for creating objects. It defines the structure and behavior of objects that will be instantiated from it. A class specifies the attributes (also known as properties or fields) that an object of that class will have and the methods (functions or procedures) that can be used to operate on those attributes. In essence, a class serves as a blueprint for creating objects with common characteristics and behavior.
+
+Here's a breakdown of some key aspects of a class:
+==================================================
+
+Attributes/Properties/Fields: 
+===============================
+These are the data members of a class and represent the characteristics or data associated with objects of that class. For example, if you have a Person class, attributes could include name, age, and address. These attributes define what data can be stored in an object of the class.
+
+Methods/Functions/Procedures: 
+===============================
+These are the behaviors or actions that objects of the class can perform. Methods are defined within the class and can operate on the class's attributes or perform other tasks. For the Person class, methods could include getFullName() and changeAddress().
+
+Constructor: 
+===============================
+A constructor is a special method in a class that is used to initialize the object when it is created. It sets the initial values of the object's attributes. In many programming languages, constructors have the same name as the class and are called automatically when an object is instantiated.
+
+Access Control: 
+===============================
+Classes often provide access control mechanisms to specify who can access and modify the attributes and methods of the class. Common access control keywords include "public," "private," and "protected." These keywords define the visibility and accessibility of class members.
+
+Inheritance: 
+===============================
+Classes can be used to create hierarchies through inheritance. This means that you can define a new class (a subclass or derived class) based on an existing class (a superclass or base class) and inherit its attributes and methods. This promotes code reuse and supports the "is-a" relationship between classes.
+
+Instance/Object: 
+===============================
+An object is an instance of a class. It is created based on the class's blueprint and has its own set of attribute values. Objects can call the methods defined in the class to perform specific actions.
+
+
+
+
+Constructor:
+============
+A constructor is a special method in a class that is used to initialize objects of that class. It is called automatically when an object is created (instantiated) from the class. Constructors have a specific purpose: to set initial values for the attributes of an object, ensuring that the object is in a valid state when it is first created.
+
+The primary role of a constructor is to perform any necessary setup or initialization tasks for an object. These tasks often involve setting the initial values of the object's attributes or performing other actions required to ensure that the object is ready for use.
+
+Here's a few key points about constructors:
+
+Name:
+===============================
+ In many programming languages, the constructor method has the same name as the class, and it is invoked automatically when you create an object from that class.
+
+Initialization:
+===============================
+ Constructors typically set the initial state of an object by initializing its attributes. For example, a constructor for a Person class might set the name and age attributes.
+
+Parameters: 
+===============================
+Constructors can take parameters to allow you to pass values when creating an object. These parameters are used to provide initial values for the object's attributes. In some cases, constructors may have default values for their parameters.
+
+Default Constructor: 
+===============================
+If you don't define a constructor in your class, many programming languages will provide a default constructor that takes no parameters and does nothing. However, if you do define a constructor, the default one is often overridden.
