@@ -1,0 +1,112 @@
+Case Study:
+===========
+
+Client Requeirments: Build a university management system where a admin can manage student and gurdian , teacher, staff, department , subjects, exam and accounts
+    and admin can create update delete and modify all the data.
+
+
+Break Down the Requeirments: 
+
+    1. Objects :
+        # Person
+        # Student
+        # Guardian
+        # Employee
+        # Teacher
+        # Staff
+        # Account
+        # Student accounts
+        # Employee accounts
+        # Department
+        # Subject
+        # Exam
+        # result
+
+
+        Student : 
+            > Id
+            > Name
+            > Guardian
+            > Contact
+            > Account
+            > Exams
+            > Department 
+            > Blood 
+        
+
+        Guardian     : 
+            > Id
+            > Name
+            > Contact
+            > Profession
+            > Income
+            > Blood
+
+        
+        Teacher :
+            > Id
+            > Name
+            > Contact
+            > Blood
+            > Department
+            > Subject
+            > Salary
+
+
+        Staff :
+            > Id
+            > Name
+            > Contact
+            > Blood
+            > Department
+            > Title
+            > Salary
+
+
+Is relations ====>
+            Contact :
+                > Id
+                > Email
+                > Phone number
+                > Altna Phone
+                > Address
+ 
+                Address :
+                    > Id
+                    > Road no.
+                    > City
+                    > Region
+                    > Country
+                    > Postal code
+++++++++++++++++++
+
+        Department :
+            > Id
+            > Name
+            > subjects
+            > Dean(Teacher)
+            > Teachers
+
+        
+        Subject :
+            > Id
+            > Name
+            > Cradit
+            > Department
+        
+
+        Exam :
+            > Id
+            > Name
+            > Pass mark
+            > Duration
+            > Subject 
+            > Student
+
+        
+        Account :
+            > Id
+            > Type
+            > Ammount
+            > Time 
+        
