@@ -43,8 +43,7 @@ class Student extends UniPerson {
     }
 
     toString (){
-        super.toString()
-        console.log(`Studnet ID : ${_studentId}`)
+        return `${super.toString()} Studnet ID : ${_studentId}`
     }
 }
 
