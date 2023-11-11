@@ -1,4 +1,4 @@
-const Person = requier("./Person.js");
+const Person = require("./Person.js");
 
 const _department = Symbol('department');
 const _account = Symbol('account');

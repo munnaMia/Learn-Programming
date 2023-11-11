@@ -1,8 +1,10 @@
-const Person = requier("./Person.js"); //Person class.
-const Guardian = requier("./Gurdian.js");
-const UniPerson = requier("./UniPerson.js");
-const Student = requier("./Student.js");
-const Employee = requier("./Employee.js");
+const Person = require("./Person.js"); //Person class.
+const Guardian = require("./Gurdian.js");
+const UniPerson = require("./UniPerson.js");
+const Student = require("./Student.js");
+const Employee = require("./Employee.js");
+const Staff = require("./Staff.js")
+const Teacher = require("./Teacher.js")
 
 module.exports = {
     Person,
@@ -10,4 +12,6 @@ module.exports = {
     UniPerson,
     Student,
     Employee,
+    Staff,
+    Teacher,
 }
