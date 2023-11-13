@@ -50,7 +50,7 @@ class Person {
 
     // toString method for person 
     toString(){
-        return `${this[_id]} - ${this[_name]}`
+        return `${this[_id]} : ${this[_name]}`
     }
 }
 

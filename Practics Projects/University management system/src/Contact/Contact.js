@@ -45,13 +45,13 @@ class Contact {
     return this[_address]
   }
 
-  set updateaddress(value){
+  set updateAddress(value){
     this[_address] = value
   }
 
 
   toString(){
-    return `ID: ${this[_id]}, Email: ${this[_email]}, Phone: ${this[_phone]}, Alternative Phone: ${this[_altPhone]}, Address: ${thsi[_address]}`
+    return `ID: ${this[_id]}, Email: ${this[_email]}, Phone: ${this[_phone]}, Alternative Phone: ${this[_altPhone]}, Address: ${this[_address]}`
   }
 }
 

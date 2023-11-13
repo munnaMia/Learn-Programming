@@ -27,9 +27,8 @@ class Guardian extends Person{
     }
 
     toString(){
-        return `${super.toString()} Profession = ${this[_profession]} - Income + ${this[_income]}`
+        return `${super.toString()}, Profession: ${this[_profession]}, Income: ${this[_income]}`
     }
 }
-
 
 module.exports = Guardian;
