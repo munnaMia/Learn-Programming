@@ -15,15 +15,6 @@
 <br/>
 <hr>
 
-### **Project Links :**
-
-1. [Tic Tac Toe](https://github.com/munnaMia/Tic-tac-toe-)
-2. [Apple Clone Tailwind project](https://github.com/munnaMia/apple-clone-project)
-3. [Weather API project](https://github.com/munnaMia/Weather-Project)
-
-<br>
-<hr>
-
 ## All the TOPIC of this repo:
     >> React Topics.
     >> DSA.
