@@ -1,0 +1,23 @@
+npm inti                        ===> to intialize npm into your project.
+npm init -y                     ===> to intialize npm into your project instently and answer all the question yes.
+
+npm ibstall --save-dev,         ===\
+npm i -D                        ===/ to install dev dependancys
+
+npm i -g package_name           ===> to install globaly to the system
+sudo npm i -g package_name      ===> for linux
+
+npm uninstall package_name      ===> to uninstall packages
+
+
+
+Packages:
+=========
+npm i chalk                     ===> a package for colorfull console.
+npm -D nodemon                  ===> a package for auto run in console
+
+
+Three types dependanci:
+1. Normal
+2. Develop
+3. Global
