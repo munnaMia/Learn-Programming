@@ -16,12 +16,11 @@
 <hr>
 
 ## All the TOPIC of this repo:
-    >> React Topics.
-    >> DSA.
-    >> Practics Projecs
-    >> Maths topic.
     >> Javascript Programming Language.
     >> NodeJS
+    >> Practics Projecs
+    >> DSA.
+    >> React Topics.
 
 <br>
 <br>
