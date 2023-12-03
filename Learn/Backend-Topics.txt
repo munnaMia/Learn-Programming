@@ -1,0 +1,54 @@
+Topic : Work of Backend Developer With all the topics:
+======================================================
+
+1. API Design:
+	1. Rest API
+	2. GraphQL
+	3. Massage Broker
+	4. gRPC
+	5. Web Socate
+	6. SOAP (Use less then 1%)
+
+2. API Security:
+	1. JWT Token
+	2. Role Based Auth
+	3. Refresh Token
+	4. OAuth2
+	5. SAML
+	6. Identity Providers
+
+3. API Documentation:
+	1. Swagger
+	2. PostMan
+	
+4. API Testing:
+	1. Unit Testing
+	2. Acceptence Testing
+	3. Load Testing
+
+
+Some Extra Topics:
+==================
+
+1. Database:
+	1. NoSQL
+		1. MongoDB
+		2. AWS DynamoDB
+		
+	2. SQL
+		1. PostgreSQL
+		2. MySQL
+		
+	3. In Memory
+		1. Radis
+		2. Mem cash
+		
+	4. Graph
+		1. Neo4J
+		
+		
+Server Application Requirement:
+===============================
+	1. Listen Requst
+	2. Process
+	3. Response
