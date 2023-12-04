@@ -82,3 +82,23 @@ func PrimeV4(num int){
 	}
 	fmt.Printf("The %v Prime Number \n", num)
 }
+
+
+func PrimeSeive(num int){
+	 primeArray := make([]int, num)
+
+	for i:=2;i<num;i++{
+		if primeArray[i] == 0{
+			for j:=i*i;j<num;j+=i{
+				primeArray[j] =1
+			}
+		}
+	}
+
+	for indx, v:= range primeArray{
+		if v==0{
+			fmt.Printf("Prime num: %v \n", indx)
+		}
+	}
+
+}
