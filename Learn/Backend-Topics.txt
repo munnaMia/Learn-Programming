@@ -50,5 +50,13 @@ Some Extra Topics:
 Server Application Requirement:
 ===============================
 	1. Listen Requst
+		1. Always same
+		
 	2. Process
+		1. Algorithm
+		2. Data structure
+		3. Problem solving
+		4. CRUD
+		
 	3. Response
+		1. Always same		
