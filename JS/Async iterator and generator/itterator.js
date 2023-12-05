@@ -1,18 +1,18 @@
 // Itterator is a Design pattern
 // What is the task of itterator: reason we dont have a control in for loop for itteration. like we can't pause in a loop.
 
-const array = [1, 2, 3,4, 5,6]
-let track = 0
+const array = [1, 2, 3, 4, 5, 6];
+let track = 0;
 
-function watchArr(){
-    console.log(array[track++])
+function watchArr() {
+  console.log(array[track++]);
 }
-watchArr()
-watchArr()
-watchArr()
-watchArr()
-watchArr()
-watchArr()
+watchArr();
+watchArr();
+watchArr();
+watchArr();
+watchArr();
+watchArr();
 
 //So how itterator work
 /**

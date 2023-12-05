@@ -1,27 +1,25 @@
-function* genarateID(){
-    let id = 1
-    while(true){
-        yield id++
-    }
+function* genarateID() {
+  let id = 1;
+  while (true) {
+    yield id++;
+  }
 }
 
+const userID = genarateID();
+const productID = genarateID();
 
-const userID = genarateID()
-const productID = genarateID()
+console.log(`userID : ${userID.next().value}`);
+console.log(`userID : ${userID.next().value}`);
+console.log(`userID : ${userID.next().value}`);
+console.log(`userID : ${userID.next().value}`);
+console.log(`userID : ${userID.next().value}`);
 
-console.log(`userID : ${userID.next().value}`)
-console.log(`userID : ${userID.next().value}`)
-console.log(`userID : ${userID.next().value}`)
-console.log(`userID : ${userID.next().value}`)
-console.log(`userID : ${userID.next().value}`)
-
-
-console.log(`Product id: ${productID.next().value}`)
-console.log(`Product id: ${productID.next().value}`)
-console.log(`Product id: ${productID.next().value}`)
-console.log(`Product id: ${productID.next().value}`)
-console.log(`Product id: ${productID.next().value}`)
-console.log(`Product id: ${productID.next().value}`)
+console.log(`Product id: ${productID.next().value}`);
+console.log(`Product id: ${productID.next().value}`);
+console.log(`Product id: ${productID.next().value}`);
+console.log(`Product id: ${productID.next().value}`);
+console.log(`Product id: ${productID.next().value}`);
+console.log(`Product id: ${productID.next().value}`);
 
 /*
 userID : 1

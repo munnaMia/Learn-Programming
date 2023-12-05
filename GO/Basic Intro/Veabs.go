@@ -38,7 +38,6 @@ func main() {
 	fmt.Printf("%x \n", txt)
 	fmt.Printf("% x \n", txt)
 
-
 	fmt.Println("===============================")
 	fmt.Println("===============================")
 	fmt.Println("============float Verv===========")

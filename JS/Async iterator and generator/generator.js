@@ -1,15 +1,13 @@
 // to create a generator function by given * sign you can create a generator
 
-
-
-// a generator return a iterator 
+// a generator return a iterator
 function* myGenerator() {
-    yield 1
-    yield 2
-    yield 3
+  yield 1;
+  yield 2;
+  yield 3;
 }
 
-const iterator = myGenerator()
+const iterator = myGenerator();
 
 // console.log(iterator.next())
 // console.log(iterator.next())
@@ -22,14 +20,13 @@ const iterator = myGenerator()
 { value: undefined, done: true }
  */
 
-
-function * range(start, end , step){
-    for (let i = start; i<=end; i+=step){
-        yield i
-    }
+function* range(start, end, step) {
+  for (let i = start; i <= end; i += step) {
+    yield i;
+  }
 }
 
-const rangeIt = range(1, 30, 3)
+const rangeIt = range(1, 30, 3);
 // console.log(rangeIt.next())
 // console.log(rangeIt.next())
 // console.log(rangeIt.next())
@@ -41,7 +38,6 @@ const rangeIt = range(1, 30, 3)
 // console.log(rangeIt.next())
 // console.log(rangeIt.next())
 // console.log(rangeIt.next())
-
 
 /**
  * { value: 1, done: false }
@@ -57,8 +53,8 @@ const rangeIt = range(1, 30, 3)
 { value: undefined, done: true }
  */
 
-for(let v of range(1, 30, 2)){
-    console.log(v)
+for (let v of range(1, 30, 2)) {
+  console.log(v);
 }
 /**
  * 1

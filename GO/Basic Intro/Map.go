@@ -38,7 +38,6 @@ func main() {
 	fmt.Println(val3, ok3)
 	fmt.Println(val4, ok4)
 
-
 	newMap := map[string]int{"one": 1, "two": 2, "three": 3, "four": 4}
 
 	var copyMap []string // defining the order
