@@ -16,7 +16,7 @@
 <hr>
 
 ## All the TOPIC of this repo:
-    >> GO
+    >> RUST
     >> Javascript Programming Language.
     >> Learn
     >> NodeJS
