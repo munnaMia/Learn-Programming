@@ -59,4 +59,26 @@ Server Application Requirement:
 		4. CRUD
 		
 	3. Response
-		1. Always same		
+		1. Always same
+
+HTTP:
+=====
+	1. GET - wants to read the data from server
+	2. POST - Create New Data
+	3. PUT/PATCH - Update existing content
+	4. DELETE - delete data from server.
+
+
+Routing Patterns:
+=================
+	1. GET -
+		1. Everything Resource - /book
+		2. Single Resource - /book/bookID
+	2. POST - /book
+	3. Update - /book/bookID
+	4. Delete - /book/bookID
+	
+	
+Backend Process:
+================
+		REQUEST --> Middleware(logger, body parser, file parser, user ip, block ip , authentication, authorization, validation) - CONTROLLER(main business logic) - Middleware(Error handler) --> RESPONSE 
