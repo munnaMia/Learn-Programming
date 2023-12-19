@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>test ejs</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/">Main</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/post">post</a></li>
+            </ul>
+        </nav>
+        <h1>EJS is awesome template engine</h1>
+        <h2><%= title %></h2>
+        <p>
+            this is good this is good this is good this is good this is good
+            this is good this is goodthis is good this is good this is good this
+            is good this is good this is good this is goodthis is good this is
+            good this is good this is good this is good this is good this is
+            goodthis is good this is good this is good this is good this is good
+            this is good this is goodthis is good this is good this is good this
+            is good this is good this is good this is goodthis is good this is
+            good this is good this is good this is good this is good this is
+            goodthis is good this is good this is good this is good this is good
+            this is good this is goodthis is good this is good this is good this
+            is good this is good this is good this is goodthis is good this is
+            good this is good this is good this is good this is good
+        </p>
+
+
+
+
+        <strong> <%= new Date().toString() %> </strong>
+
+
+
+        <h2>
+            <% if (post.published) { %>
+                <p>Title : <%= post.title %></p>
+                <p>body : <%= post.body %></p>
+            <% } else { %>
+                <p>Title H: <%= post.title %></p>
+                <p>body H: <%= post.body %></p>
+            <% } %>
+        </h2>
+
+
+
+        <ul>
+            <% for (let i of testOBJ2) {%>
+                <li>name : <%= i.name%> and age:  <%= i.age%> </li>    
+            <% } %>
+        </ul>
+    </body>
+</html>

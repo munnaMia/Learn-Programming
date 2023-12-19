@@ -1,0 +1,41 @@
+<%- include('../partials/header.ejs') %>
+
+
+<%- include('../partials/nav.ejs') %>
+<h1>EJS is awesome template engine</h1>
+<h2><%= title %></h2>
+<p>
+    this is good this is good this is good this is good this is good this is
+    good this is goodthis is good this is good this is good this is good this is
+    good this is good this is goodthis is good this is good this is good this is
+    good this is good this is good this is goodthis is good this is good this is
+    good this is good this is good this is good this is goodthis is good this is
+    good this is good this is good this is good this is good this is goodthis is
+    good this is good this is good this is good this is good this is good this
+    is goodthis is good this is good this is good this is good this is good this
+    is good this is goodthis is good this is good this is good this is good this
+    is good this is good this is goodthis is good this is good this is good this
+    is good this is good this is good
+</p>
+
+<strong> <%= new Date().toString() %> </strong>
+
+<h2>
+    <% if (post.published) { %>
+    <p>Title : <%= post.title %></p>
+    <p>body : <%= post.body %></p>
+    <% } else { %>
+    <p>Title H: <%= post.title %></p>
+    <p>body H: <%= post.body %></p>
+    <% } %>
+</h2>
+
+<ul>
+    <% for (let i of testOBJ2) {%>
+    <li>name : <%= i.name%> and age: <%= i.age%></li>
+    <% } %>
+</ul>
+
+
+
+<%- include('../partials/footer.ejs') %>

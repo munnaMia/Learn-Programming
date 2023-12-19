@@ -1,0 +1,18 @@
+EJS - Embeded Javascript Templeting
+
+<%= Data provide %>     => any kind of data like variable string, object or any data if you want to provide use this tag.
+
+<%%><%%>                => to provide conditions use this. it will not provide data the = sign mean to provide data
+                           <% if(condition) { %>
+                                html code to provide
+                           <% } %>
+
+<%# comment %>          = to give comment
+
+<%- Data  as html%>     = to provide data as html
+
+
+### To work with EJS first thing - install EJS => npm i ejs 
+after installation we dont have to import it.
+
+### secound thing we have to create a views folder where we store our all template...

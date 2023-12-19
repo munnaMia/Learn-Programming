@@ -1,0 +1,20 @@
+When a user request server provide a HTML data that have also dynamic data to show the user.
+
+Data        HTML
+|||         |||
+|||         |||
+|||         |||
+|||         |||
+Template engine
+     ||
+     ||
+     ||
+     ||
+     \/
+  Final Document
+
+
+  Some famous template engine of express:
+    1. PUG - Famous
+    2. HBS - Not so better.
+    3. EJS - Simple
