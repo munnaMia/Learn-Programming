@@ -1,0 +1,38 @@
+\\\\ How to install on MAC-OS?
+//// =========================
+
+
+## Using apt  Homebrew =|
+========================|
+
+    1. Type in Terminal :
+        > brew install go
+
+
+
+## Manually Downloading and Installing =|
+========================================|
+
+    1. Download the installer:
+    ==========================
+        1. Visit the official Golang website: https://go.dev/dl/
+        2. Click the >>> "Download Go for macOS" button.
+        3. This will download a PKG file.
+
+    2. Run the installer:
+    =====================
+        1.Double-click the downloaded >>> PKG file.
+        2. Follow the prompts to install Go. The default installation location is usually /usr/local/go.
+
+    3. Set up environment variables:
+    ================================
+        1. Open the Terminal app.
+        2. Edit your shell profile and add the following lines:
+            > export GOPATH=$HOME/go
+            > export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+        3. Save the changes to your profile and restart the Terminal for the changes to take effect.
+
+    4. Verify the installation:
+    ===========================
+        1. In the Terminal, type >>> "go version" and press Enter.
+        2. If Go is installed correctly, you should see the installed Go version displayed.

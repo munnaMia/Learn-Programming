@@ -1,0 +1,57 @@
+File handling is an essential operation for any programming language. In golang we can perform file operation with using built in module and methods.
+
+
+
+How to create a file?
+=====================
+ To create a file in golang use os.create() function. It will take file path as parameter and return file and error object.
+    >> file, err := os.Create("file.txt")
+
+
+
+How to check if a file exist?
+=============================
+ To check a file exist or not use os.stat() function. It will take file path as parameter and return file and error object.
+    >> _, err := os.Stat("../file.txt") 
+
+ another function will also help os.IsNotExist() it return boolean value.
+    >> if os.IsNotExist(err) { // Check for errors
+	>> 	    fmt.Println(err) // Output : stat ../file.txt: no such file or directory
+	>> 	    return
+	>> }else{
+	>> 	    fmt.Println("file exist")
+	>> }
+
+
+
+How to write a file?
+====================
+ There three ways to write to a file in Golang: ioutil.WriteFile(), bufio.NewWriter(), and os.OpenFile().
+
+    1. Method to write file using ioutil.WriteFile() : In this case if a file doesn't exist it will create or if exist it will overwrite.
+        It take 3 things:
+            1. File path
+            2. Data to write
+            3. File permission or mode 
+    
+    2. Method to write file using bufio.NewWriter() : To work with this we have to create a bufio.NewWriter() object then we can we work with that
+        It take 1 things:
+            1. File path
+        ---> See example on file no. 04.
+    
+    3. Method to write file using os.OpenFile() : To work with that The file mode specifies the action to perform on the file. In this case, we are writing to the file, so we use the os.O_WRONLY flag. The file permission specifies the permissions to use when creating the file. If the file doesn't exist, it will be created. If the file already exists, it will be overwritten.
+        It take i things:
+            1. File path
+            2. mode
+            3. permission 
+
+
+
+How to append a file?
+=====================
+ To append to a file in Golang, you can use the os.OpenFile() function with the os.O_APPEND flag. The os.O_APPEND flag specifies that the data should be appended to the file.If the file doesn't exist, it will be created.
+ fmt.Fprintf(), fmt.Fprintln(), and fmt.Fprint() are also useful functions for appending to a file. They take a file object as a parameter and write to the file.
+
+    >> file, err := os.OpenFile("file.txt", os.O_APPEND|os.O_WRONLY, 0644)
+    or
+    >> fmt.Fprintln(file, "The earth can be flat but the sky is always blue.")
