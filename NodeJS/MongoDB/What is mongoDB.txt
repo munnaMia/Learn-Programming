@@ -1,0 +1,14 @@
+MongoDB is a noSQL database.
+is also known as document database
+use JS for all operation
+return JSON or JS object and perform any quary.
+
+
+
+Collection: Collection means larger object in array
+    1 User Collection
+    2 Post Collection
+
+
+ID is a prymery key in noSQL database.
+Foren key not avaiable here use document reference.

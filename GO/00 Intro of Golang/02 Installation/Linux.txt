@@ -1,0 +1,48 @@
+\\\\ How to install on Linux?
+//// ========================
+
+## Using apt Package Manager =|
+==============================|
+
+    1. Update package lists:
+        > Terminal: sudo apt update
+        > Terminal: sudo apt upgrade
+
+    2. Install Golang:
+        > Terminal: sudo apt install golang-go
+
+    3. Verify installation:
+        > Terminal: go version
+
+
+## Manually Downloading and Installing =|
+========================================|
+
+    1. Download the Go archive:
+        1. Visit https://go.dev/dl/ and copy the download link for the Linux tarball. 
+        OR,
+        2. Use wget to download it:
+            > Terminal: wget https://go.dev/dl/go1.19.4.linux-amd64.tar.gz
+    
+    2. Extract the archive:
+        > Terminal: sudo tar -C /usr/local -xzf go1.19.4.linux-amd64.tar.gz
+
+    3. Set environment variables:
+        1. Open ~/.profile using a text editor: 
+            > Terminal: nano ~/.profile
+        2. Add these lines:
+            > export GOROOT=/usr/local/go
+            > export GOPATH=$HOME/go
+            > export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+        3. Save and exit the editor.
+
+        4. Apply the changes:
+            > Terminal: source ~/.profile
+
+        5. Verify installation:
+            > Terminal: go version
+
+
+
+

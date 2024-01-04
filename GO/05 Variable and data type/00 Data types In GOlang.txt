@@ -1,0 +1,72 @@
+========================
+========================
+Data Types: ==
+========================
+========================
+
+00. What is Data type? ---> In computer science and programming, a data type, often simply called a type, defines the kind of data a variable can hold and the operations that can be performed on it. It's like a label that tells the computer what kind of information is stored in a specific piece of memory and how it should be handled.
+
+01. What is Variable? ---> A named container that stores data that can be changed during the execution of a program. Imagine it like a box with a label, where you can put different things inside at different times.
+
+
+
+Data Types in GOlang:
+=====================
+
+    Basic types:
+    ------------
+
+        1. Integer type
+            1. (Int): Platform-dependent size (usually 32 or 64 bits). 
+            2. (Int8, int16, int32, int64): Fixed-size integers.
+            3. (uint, uint8, uint16, uint32, uint64): Unsigned integers for non-negative values.
+            4. (uintptr): Unsigned integer to store memory addresses.
+
+        2. Float type
+            1. float32: Single-precision floating-point numbers.
+            2. float64: Double-precision floating-point numbers.
+
+        3. String type
+            1. string = "this is a string"
+
+        4. Boolean type:
+            1. bool = true or false
+
+
+        5. Complex numbers:
+            1. complex64: Single-precision complex numbers.
+            2. complex128: Double-precision complex numbers.
+
+        6. Byte (byte): Alias for uint8, representing a single ASCII character.
+
+        7. Rune (rune): Alias for int32, representing a Unicode code point.
+
+
+
+    Composite Types:
+    ----------------
+
+        1. Arrays: Fixed-size collections of elements of the same type
+
+        2. Slices: Dynamically resizable sequences of elements of the same type.
+
+        3. Maps: Unordered collections of key-value pairs, where keys are unique.
+
+        4. Structs: Composite types that group named fields of different types.
+
+
+
+    Reference Types:
+    ----------------
+
+        1. Pointers: Store memory addresses of values.
+        
+        2. Functions: Represent executable code blocks.
+        
+        3. Interfaces: Define a set of methods that a type must implement.
+        
+        4. Channels: Allow communication between goroutines.
+        
+
+
+
